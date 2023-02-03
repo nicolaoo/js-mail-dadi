@@ -12,7 +12,6 @@ let risultElement = document.getElementById('risultato')
 btnUserElement.addEventListener('click', function () {
     let numUser = Math.floor(Math.random() * 6) + 1
     
-    
     let numComputer = Math.floor(Math.random() * 6)
     console.log(numUser, numComputer)
 
@@ -23,6 +22,9 @@ btnUserElement.addEventListener('click', function () {
     if (numUser > numComputer){
         console.log('hai vinto')
         risultElement.innerHTML = 'Hai vinto!!!!!'
+    }
+    else if (numUser === numComputer){
+        risultElement.innerHTML = 'Pareggiooo!!!!!'
     }
     else {
         console.log ('hai perso')
