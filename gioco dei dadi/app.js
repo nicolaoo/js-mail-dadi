@@ -6,6 +6,7 @@ let btnUserElement = document.getElementById('btn-user')
 let numberUserElement = document.getElementById('number-user')
 let numberComputerElement = document.getElementById('number-computer')
 let risultElement = document.getElementById('risultato')
+let sfondoElement = document.getElementById('background')
 
 
 
@@ -22,6 +23,7 @@ btnUserElement.addEventListener('click', function () {
     if (numUser > numComputer){
         console.log('hai vinto')
         risultElement.innerHTML = 'Hai vinto!!!!!'
+        
     }
     else if (numUser === numComputer){
         risultElement.innerHTML = 'Pareggiooo!!!!!'
